@@ -7,7 +7,7 @@ The **Academy Backend** project provides a robust backend system for managing st
 ## First look:
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7283d9b0-7f21-446a-b4ab-de5a2beb5154" alt="" width="700">
+<img src="https://github.com/user-attachments/assets/7283d9b0-7f21-446a-b4ab-de5a2beb5154" alt="" width="850">
 </p>
 
 
