@@ -142,3 +142,6 @@ The backend calculates the number of lessons required to promote a student to th
 
 In the next phase of the project, this backend will be integrated with a frontend system, which will allow users to interact with the API via a user-friendly interface. The frontend will allow for managing students, tracking progress, and completing lessons more efficiently.
 
+## Observations
+- IDE used: <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
+- Database viewer used: <a href="https://github.com/qwtel/sqlite-viewer-vscode">SQLite Viwer for VS Code</a>.
