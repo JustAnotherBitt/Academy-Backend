@@ -4,7 +4,7 @@
 
 The **Academy Backend** project provides a robust backend system for managing students, classes, and progression in a martial arts academy. This system includes features for managing students' personal information, tracking their progress, and handling completed lessons. The backend is designed to be integrated with a frontend system in the next phase of the project.
 
-## First look:
+## First look
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/3dd9a728-7c05-4964-9307-127157d28295" alt="" width="850">
