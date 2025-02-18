@@ -10,5 +10,5 @@ def redirect_to_docs(request):
 urlpatterns = [
     path('', redirect_to_docs),  # Redirect root to /api/docs
     path('admin/', admin.site.urls),
-    path('api/', api.urls)
+    path('api/', api.urls),
 ]

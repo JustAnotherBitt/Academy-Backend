@@ -19,6 +19,7 @@ class Students(models.Model):
         return self.name
 
 class CompletedLessons(models.Model):
+    # If the student is deleted, all their completed classes will also be deleted
     student = models.ForeignKey(Students, on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
     current_belt = models.CharField(max_length=2, choices=belt_choices, default='W')
