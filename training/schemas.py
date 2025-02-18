@@ -6,6 +6,15 @@ class StudentsSchema(ModelSchema):
     class Meta:
         model = Students
         fields = ['name', 'email', 'belt', 'birth_date']
+        
+class UpdateStudentSchema(Schema):
+    name: Optional[str] = None
+    email: Optional[str] = None
+    belt: Optional[str] = None
+    birth_date: Optional[str] = None
+
+class DeleteStudentSchema(Schema):
+    message: str
 
 class StudentProgressSchema(Schema):
     email: str
