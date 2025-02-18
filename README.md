@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Academy Backend** project provides a robust backend system for managing students, classes, and progression in a martial arts academy. This system includes features for managing students' personal information, tracking their progress, and handling completed lessons. The backend is designed to be integrated with a frontend system in the next phase of the project.
+The **Academy Backend** project provides a robust backend system for managing students, classes, and progression in a martial arts academy. This system includes features for managing students' personal information, tracking their progress, and handling completed lessons. The backend is integrated with the <a href="https://github.com/JustAnotherBitt/Academy-Frontend">frontend system</a>, and both repositories should be running simultaneously to ensure synchronization with the database and API endpoints.
 
 ## First look
 
