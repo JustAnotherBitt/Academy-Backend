@@ -3,7 +3,7 @@ from typing import List
 from django.shortcuts import get_object_or_404
 from ninja import Router
 from ninja.errors import HttpError
-from .schemas import StudentProgressSchema, StudentsSchema, CompletedLessonSchema
+from .schemas import DeleteStudentSchema, StudentProgressSchema, StudentsSchema, CompletedLessonSchema, UpdateStudentSchema
 from .graduation import *
 from .models import Students, CompletedLessons
 
@@ -74,7 +74,7 @@ def completed_lesson(request, completed_lesson: CompletedLessonSchema):
     return 200, f"Class marked as completed for the student {student.name}"
 
 @training_router.put("/students/{student_id}", response=StudentsSchema)
-def update_student(request, student_id: int, student_data: StudentsSchema):
+def update_student(request, student_id: int, student_data: UpdateStudentSchema):
     student = get_object_or_404(Students, id=student_id)
     
     # Checks whether the student is the appropriate age for the belt
@@ -90,3 +90,14 @@ def update_student(request, student_id: int, student_data: StudentsSchema):
     
     student.save()
     return student
+
+@training_router.delete("/students/{student_id}", response=DeleteStudentSchema)
+def delete_student(request, student_id: int):
+    student = get_object_or_404(Students, id=student_id)
+    
+    # Excludes the student
+    student.delete()
+    
+    # Returns a succes message
+    return {"message": f"Student with ID {student_id} successfully deleted."}
+
