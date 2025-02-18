@@ -146,7 +146,7 @@ The backend calculates the number of lessons required to promote a student to th
 
 ## Frontend Integration
 
-The frontend is already available for integration, and both the frontend and backend repositories must be running simultaneously for proper functionality. This ensures synchronization with the database and API endpoints, allowing users to interact with the system through a user-friendly interface. The frontend enables managing students, tracking progress, and completing lessons efficiently.
+The frontend is already available for integration, and both the frontend and backend repositories must be running simultaneously for proper functionality. This ensures synchronization with the database and API endpoints, allowing users to interact with the system through a user-friendly interface. 
 
 Frontend repository is <a href="https://github.com/JustAnotherBitt/Academy-Frontend">HERE</a>.
 
