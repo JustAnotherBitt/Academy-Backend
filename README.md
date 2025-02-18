@@ -131,6 +131,12 @@ Mark a lesson as completed for a student.
 }
 ```
 
+#### Delete a Student
+
+`DELETE /api/students/{student_id}`
+
+Delete a student profile by ID.
+
 ### Progress Calculation
 
 The backend calculates the number of lessons required to promote a student to the next belt based on the student's current belt and the number of lessons they have completed.
@@ -138,9 +144,11 @@ The backend calculates the number of lessons required to promote a student to th
 - **Current Belts**: White (0), Blue (1), Purple (2), Brown (3), Black (4)
 - **Lesson Calculation**: Each belt level has a corresponding lesson requirement, and the system tracks how many lessons remain to achieve the next belt.
 
-## Future Integration
+## Frontend Integration
 
-In the next phase of the project, this backend will be integrated with a frontend system, which will allow users to interact with the API via a user-friendly interface. The frontend will allow for managing students, tracking progress, and completing lessons more efficiently.
+The frontend is already available for integration, and both the frontend and backend repositories must be running simultaneously for proper functionality. This ensures synchronization with the database and API endpoints, allowing users to interact with the system through a user-friendly interface. The frontend enables managing students, tracking progress, and completing lessons efficiently.
+
+Frontend repository is <a href="https://github.com/JustAnotherBitt/Academy-Frontend">HERE</a>.
 
 ## Observations
 - IDE used: <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
